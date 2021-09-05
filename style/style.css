@@ -1,0 +1,129 @@
+body {
+    box-sizing: border-box;
+    background-color: #d8e3e7;
+    height: 100vh;
+    position: relative;
+}
+
+.flex-container {
+    display: flex;
+    flex-direction: column;
+}
+
+.flex-container_header header h1 {
+    flex-basis: auto;
+    margin: 0;
+    padding: 5mm;
+    text-align: center;
+    color: #FFF;
+    font-family: 'Open Sans',sans-serif;
+}
+
+.flex-container_header header {
+    background: linear-gradient(to right, rgb(23, 0, 85), rgb(174, 0, 251));
+}
+
+.flex-container_contenido,
+.flex-container_footer {
+    font-family: 'Fira Sans', sans-serif;
+}
+
+.flex-container_contenido h4 {
+    margin: 1mm;
+    padding: 0;
+    font-size: 10pt;
+    text-align: center;
+
+}
+.flex-container_contenido {
+    box-sizing: border-box;
+    background-color: #fff;
+    margin: .5cm auto;
+    padding: 5mm;
+    width: 100%;
+    max-width: 25cm;
+    min-width: 5cm;
+    justify-content: center;
+    border-radius: 2mm;
+
+}
+
+.flex-container_contenido_modulos {
+    display: flex;
+    flex-grow: 1 1 10cm;
+    justify-content: space-around;
+    box-sizing: border-box;
+}
+
+
+
+.flex-container_contenido__modulo22,
+.flex-container_contenido__modulo23 {
+    width: 100%;
+    margin: 5mm;
+    max-width: 10cm;
+    padding: 1mm 5mm;
+    min-width: 4cm;
+    background: linear-gradient(to right top, #AE00FB, #3e00ff);
+    color: #fff;
+    border-radius: 2mm;
+}
+
+.flex-container_contenido__modulo22 h3,
+.flex-container_contenido__modulo23 h3 {
+    text-align: center;
+}
+
+.flex-container_contenido__modulo22 img,
+.flex-container_contenido__modulo23 img {
+    width: 100%;
+    display: block;
+    max-width: 6cm;
+    min-width: 4cm;
+    margin: 2mm auto;
+}
+
+.flex-container_footer {
+    flex-basis: auto;
+    background-color: #000;
+    color: #fff;
+    text-align: center;
+    padding: 2mm;
+    margin-bottom: 0;
+    padding: 0;
+    flex-grow: 1;
+}
+
+.flex-container_footer footer h5 {
+    margin: 0;
+    padding: 5mm;
+}
+
+
+body::-webkit-scrollbar {
+    width: 2mm;
+    background: #abb;
+}
+body::-webkit-scrollbar-thumb {
+    background-color: #170055;
+    border-radius: 1mm;
+}
+
+body::-webkit-scrollbar-thumb:hover {
+    background: #888;
+}
+
+@media screen and (max-width: 15cm) {
+    .flex-container_contenido_modulos {
+        flex-direction: column;
+        justify-content: center;
+        margin: auto;
+    }
+
+    .flex-container_contenido__modulo22,
+    .flex-container_contenido__modulo23 {
+        justify-content: center;
+        width: 6cm;
+        margin: 5mm auto;
+    }
+}
